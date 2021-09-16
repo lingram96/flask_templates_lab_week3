@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% block content %}
+<link rel="stylesheet" href="/static/style.css">
+
+<h1>Events in Glasgow!</h1>
+    <div id="form">
+    <form action="/events" method="POST">
+        <label for="date">Date</label>
+        <input type="date" name="date" id="date">
+        <label for="name">Name of Event</label>
+        <input type="text" name="name" id="name">
+        <label for="guests">Number of Guests</label>
+        <input type="number" name="guests" id="guests">
+        <label for="room">Room Location</label>
+        <input type="text" name="room" id="room">
+        <label for="description">Description</label>
+        <textarea name="description" id="description" cols="15" rows="2"></textarea>
+        <input type="submit" value="Add Event" id="submit">
+    </form>
+    </div>
+    <img src="/static/glasgow.jpg" alt="Glasgow city">
+    {% for event in events %}
+    <div id="textbox">
+        <p>
+            {{ event.date }}: <b>{{ event.name}}</b> <b>{{ event.number_of_guests }}</b> 
+            <b>{{ event.room_location }} </b> <b>{{ event.description }}</b>
+            {% if event.recurring %}
+            <span>&#128260;</span>
+            {% endif %}
+        </p>
+    </div>
+    {% endfor %}
+{% endblock %}
+
+
+

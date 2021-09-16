@@ -1,0 +1,78 @@
+body {
+    background-color: powderblue;
+    color:whitesmoke;
+}
+
+#head{
+    background-color: steelblue;
+    padding: 16px;
+    margin: -10px;
+}
+
+body > hr{
+    width: 2000px;
+}
+
+#head > ul > li > a{
+    text-decoration: none;
+    color: white;
+    font-family: Impact;
+    font-size: 20px;
+    border-style: solid;
+    border-radius: 5px;
+    border-width: 5px;
+    border-color: white;
+    color: purple;
+    background-color: white;
+}
+
+#head > ul > li{
+    list-style: none;
+}
+
+h1{
+    font-family: Impact;
+    text-align: center;
+    color: white;
+    font-size: 75px;
+}
+
+img{
+    display: block;
+    margin-top: -280px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    padding-bottom: 50px;
+}
+
+label{
+    display: block;
+    padding-left: 15px;
+    text-indent: -15px;
+    color: purple;
+    font-family: courier;
+}
+
+#submit{
+    display: block;
+    padding: 15px 15px 15px 30px;
+    margin: 15px;
+    text-indent: -15px;
+    border-radius: 100px;
+    color: white;
+    background-color: steelblue;
+}
+
+#textbox {
+    display: block;
+    margin-left: 375px;
+    text-align: center;
+    border-style: solid;
+    border-color: steelblue;
+    border-width: 5px;
+    width: 500px;
+    color: purple;
+    background-color: white;
+    font-family: courier;
+}

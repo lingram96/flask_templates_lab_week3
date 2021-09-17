@@ -17,3 +17,10 @@ def add_event():
     new_event = Event(event_date, event_name, event_guests, event_room, event_description, False)
     add_new_event(new_event)
     return render_template("index.html", title="Home", events=events)
+
+# @app.route("/events/delete/<index>")
+# def remove_event():
+#     event_name = request.form["name"]
+#     deleted_event = Event(event_name)
+
+

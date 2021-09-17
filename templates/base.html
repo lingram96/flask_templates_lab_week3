@@ -1,5 +1,5 @@
 <html>
-    <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="{{'/static/style.css'}}">
     <head>
         <title>{{ title }} - List of Events </title>
     </head>
@@ -7,10 +7,21 @@
         <div id="head">
         <ul>
             <li><a href="/events">Home</a></li>
+            <li><a href="/events">Events</a></li>
+            <li><a href="/events">Contact</a></li>
         </ul>
         </div>
         <hr>
         {% block content %}
         {% endblock %}
+        <div>
+            <footer id="footer">
+                <h3>Local Glasgow Events</h3>
+                <p>Contact Us: 0987654321 </p>
+                <p>Follow us on Socials:</p>
+                <img id="insta" src="/static/insta.png" alt="instagram">
+                <img id="twitter" src="/static/twitter.png" alt="twitter">
+            </footer>
+        </div>
     </body>
 </html>

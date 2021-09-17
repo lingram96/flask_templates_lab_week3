@@ -1,57 +1,87 @@
+html {
+    background: url(/static/glasgowcity.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
 body {
-    background-color: powderblue;
     color:whitesmoke;
 }
 
 #head{
-    background-color: steelblue;
+    background-color:tan;
     padding: 16px;
     margin: -10px;
 }
 
 body > hr{
-    width: 2000px;
+    width: 100%;
+}
+
+#footer{
+    background-color:tan;
+    color: white;
+    padding-top: 15px;
+    padding: 5px;
+    margin: -10px;
+    text-indent: 20px;
+    display: inline block;
+    float: right;
+    font-size: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
 
 #head > ul > li > a{
     text-decoration: none;
     color: white;
-    font-family: Impact;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 20px;
     border-style: solid;
     border-radius: 5px;
-    border-width: 5px;
-    border-color: white;
-    color: purple;
-    background-color: white;
+    border-width: 2px;
+    color:white;
+    padding: 10px;
+    
 }
 
 #head > ul > li{
     list-style: none;
+    display: inline-table;
+    margin-left: 25px;
 }
 
 h1{
-    font-family: Impact;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
     color: white;
     font-size: 75px;
+    font-style:italic;
+    font-weight: lighter;
+    margin-left: 70px;
 }
 
-img{
-    display: block;
-    margin-top: -280px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-    padding-bottom: 50px;
+#insta{
+    height: 25px;
+    width: 25px;
+    margin-left: 50px;
+}
+
+#twitter{
+    height: 25px;
+    width: 25px;
+    margin-left: 10px;
 }
 
 label{
     display: block;
-    padding-left: 15px;
+    padding-left: 20px;
     text-indent: -15px;
-    color: purple;
+    color: white;
     font-family: courier;
+    padding: 10px;
+    margin-left: 10px;
 }
 
 #submit{
@@ -59,6 +89,8 @@ label{
     padding: 15px 15px 15px 30px;
     margin: 15px;
     text-indent: -15px;
+    font-family: courier;
+    font-weight: bold;
     border-radius: 100px;
     color: white;
     background-color: steelblue;
@@ -67,12 +99,15 @@ label{
 #textbox {
     display: block;
     margin-left: 375px;
+    margin-top: 50px;
+    margin-bottom: 25px;
     text-align: center;
     border-style: solid;
-    border-color: steelblue;
-    border-width: 5px;
+    border-color: tan;
+    border-radius: 10px;
+    border-width: 2px;
     width: 500px;
-    color: purple;
+    color: steelblue;
     background-color: white;
-    font-family: courier;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }

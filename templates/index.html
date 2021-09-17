@@ -2,7 +2,7 @@
 {% block content %}
 <link rel="stylesheet" href="/static/style.css">
 
-<h1>Events in Glasgow!</h1>
+<h1>Upcoming Events in Glasgow</h1>
     <div id="form">
     <form action="/events" method="POST">
         <label for="date">Date</label>
@@ -15,14 +15,16 @@
         <input type="text" name="room" id="room">
         <label for="description">Description</label>
         <textarea name="description" id="description" cols="15" rows="2"></textarea>
+        <label for="recurring">Is this a Recurring event?</label>
+        <input type="radio" value="Recurring">
         <input type="submit" value="Add Event" id="submit">
     </form>
     </div>
-    <img src="/static/glasgow.jpg" alt="Glasgow city">
+    <!-- <img src="/static/glasgow.jpg" alt="Glasgow city"> -->
     {% for event in events %}
     <div id="textbox">
         <p>
-            {{ event.date }}: <b>{{ event.name}}</b> <b>{{ event.number_of_guests }}</b> 
+            {{ event.date }}: <b>{{ event.event_name }}</b> <b>{{ event.number_of_guests }}</b> 
             <b>{{ event.room_location }} </b> <b>{{ event.description }}</b>
             {% if event.recurring %}
             <span>&#128260;</span>
